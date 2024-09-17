@@ -1,0 +1,96 @@
+.wrapper {
+  max-width: 73.6rem;
+  margin: -3rem auto 0;
+  padding: 0 1rem;
+}
+
+form {
+  gap: .8rem;
+  display: flex;
+  align-items: center;
+}
+form input {
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: .8rem;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+}
+form input:focus {
+  border: transparent;
+}
+form input::placeholder {
+  color: var(--gray-300);
+}
+form button {
+  padding: 1.6rem;
+  border: none;
+  border-radius: .8rem;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  cursor: pointer;
+  transition: all .1s;
+}
+form button:hover {
+  background-color: var(--blue);
+}
+form button svg {
+  font-size: 2rem;
+  color: var(--gray-100);
+  font-weight: bold;
+}
+
+.tasksWrapper {
+  margin: 6.4rem auto 0;
+}
+.tasksWrapper > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 2.4rem;
+}
+.blueColorText {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: .5rem;
+  color: var(--blue);
+}
+.purpleColorText {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: .5rem;
+  color: var(--purple);
+}
+.counter {
+  background-color: var(--gray-400);
+  padding: .2rem .8rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.tasksContent {
+  border-top: 1px solid var(--gray-400); /* Set the border color and width */
+  border-radius: .8rem; /* Top left, top right, bottom right, bottom left */
+  min-height: 24.4rem;
+  margin-bottom: 2.4rem;
+}
+.noTasksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.4rem;
+  color: var(--gray-300);
+}
+.noTasksContainer svg {
+  font-size: 6.4rem;
+  margin-bottom: 1.6rem;
+}
